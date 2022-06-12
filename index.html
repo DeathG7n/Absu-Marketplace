@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absu Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="home">
+    <header id="header">
+        <h1>ABSU Marketplace</h1>
+        <input type="search" name="marketplace" id="search-place" autocomplete="on" placeholder="Search...">
+        <input type="submit" value="Search" id="search">
+        <nav id="myLinks">
+            <a href="#home">Home</a>
+            <a href="#fruits">Market</a>
+            <a href="#about">Reference</a>
+        </nav>
+        <div class="cart">
+            <a href="#cart"><img src="Foodstuffs/cart.jpg" alt="cart"></a>
+            <span id="items"></span>
+        </div>
+        <div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
+    </header>
+    <div id="search-bar"></div>
+    <main>
+        <section id="categories">
+            <div class="items" id="foodstuffs">
+               <h4>Foodstuffs</h4> 
+               <img src="Foodstuffs/foodstuffs.jpeg" alt="Foodstuffs" >
+            </div>
+            <div class="items" id="provisions" >
+                <h4>Provisions</h4>
+                <img src="Provisions/provisions.jpeg" alt="Provisions" >
+            </div>
+            <div class="items" id="snacks">
+                <h4>Snacks/Drinks</h4>
+                <img src="Snacks/snacksanddrinks.jpeg" alt="Snacks" >
+            </div>
+            <div class="items" id="fruits" >
+                <h4>Fruits</h4>
+                <img src="Fruits/fruits.jpeg" alt="Fruits" >
+            </div>
+        </section>
+        <section id="marketplace">
+            <h1 id="shop">Market</h1>
+            <span id="market"></span>
+        </section>
+        <section id="cart">
+            <div id="cart-box">
+                <h1>Cart</h1>
+                <div id="market-items">
+                    <h4><strong class="underlined">List</strong></h4>
+                    <ul id="cart-list"></ul>
+                </div>
+                <button id="clear-cart">Clear Cart</button>
+            </div>
+        </section>
+        <section id="about">
+            <div>
+                <h1>About</h1>
+                <p>Absu Market is made up of different individual vendors that are trying to grow a thriving community. Absu Marketplace is a link to create a network of vendors to help students and community indigens alike eliminate the stress of not knowing what is available in the market. This is especially helpful to students as it helps them effectively utilize their time for other more academic endeavours.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>@ Abia State University, Uturu.</h2>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
